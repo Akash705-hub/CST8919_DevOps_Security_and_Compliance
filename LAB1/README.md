@@ -114,4 +114,5 @@ http://127.0.0.1:5001/
 | `/logout` | GET | Logs the user out and redirects back to home |
 | `/hello` | GET | Simple test route returning `Hello World` |
 
+Recording: https://drive.google.com/file/d/1Qkk3TsmSvH2yEyAP-zJ1HgCobbQMdtlV/view?usp=sharing
 ---
