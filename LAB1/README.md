@@ -42,3 +42,76 @@ The SP:
 In this lab, **your Flask app is the Service Provider** and **Auth0 acts as the Identity Provider / Relying Party (RP)**.
 
 ---
+## Setup and Execution
+
+### 1. Install dependencies
+
+Open a terminal in the `LAB1` folder and run:
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+### 2. Configure environment variables
+
+The app uses Auth0 settings from environment variables. You can store them in a `.env` file in the `LAB1` folder, or export them in your shell.
+
+Required variables:
+
+- `AUTH0_DOMAIN`: Your Auth0 tenant domain, for example `dev-abc123.us.auth0.com`
+- `AUTH0_CLIENT_ID`: Auth0 application client ID
+- `AUTH0_CLIENT_SECRET`: Auth0 application client secret
+- `AUTH0_SECRET`: Flask session secret key used by the app
+- `AUTH0_REDIRECT_URI`: Callback URL configured in Auth0, for example `http://127.0.0.1:5001/callback`
+
+Optional variable:
+
+- `AUTH0_AUDIENCE`: Auth0 API audience if you need API access; leave blank if not used
+
+Example `.env` file:
+
+```env
+AUTH0_DOMAIN=your-auth0-domain
+AUTH0_CLIENT_ID=your-client-id
+AUTH0_CLIENT_SECRET=your-client-secret
+AUTH0_SECRET=some-random-secret
+AUTH0_REDIRECT_URI=http://127.0.0.1:5001/callback
+AUTH0_AUDIENCE=
+```
+
+### 3. Run the application
+
+From the `LAB1` folder, start the Flask app:
+
+```powershell
+python app.py OR py app.py
+```
+
+Then open:
+
+```text
+http://127.0.0.1:5001/
+```
+
+### 4. Use the app
+
+- Visit `/` to see the home page
+- Click **Login** to authenticate with Auth0
+- Visit `/profile` to view the logged-in user profile
+- Use `/logout` to sign out
+
+### 5. Endpoints
+
+| Endpoint | Method | Description |
+|---|---|---|
+| `/` | GET | Home page showing login status and login button |
+| `/login` | GET | Redirects to Auth0 for login |
+| `/callback` | GET | Auth0 callback URL after login |
+| `/profile` | GET | Protected profile page for logged-in users |
+| `/protected` | GET | Protected page that also requires login |
+| `/logout` | GET | Logs the user out and redirects back to home |
+| `/hello` | GET | Simple test route returning `Hello World` |
+
+---
