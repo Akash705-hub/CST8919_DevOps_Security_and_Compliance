@@ -1,0 +1,17 @@
+### Successful login
+POST https://flask-login-app-e9hah5fcdsdte0dx.canadacentral-01.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+### Failed login
+POST https://flask-login-app-e9hah5fcdsdte0dx.canadacentral-01.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user123"
+}
