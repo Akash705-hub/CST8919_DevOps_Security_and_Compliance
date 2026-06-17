@@ -94,3 +94,23 @@ Invoke-RestMethod -Uri http://127.0.0.1:5000/login -Method Post -ContentType "ap
 
 - User credentials are stored in memory for demo purposes only.
 - The app listens on all interfaces (`0.0.0.0`) when run locally.
+
+## Azure Deployment
+
+- App Service
+![alt text](image.png)
+
+- Log Analytics Workspace
+![alt text](image-1.png)
+
+- Configure Log Analytics Workspace
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+- KQL
+![alt text](image-4.png)
+
+- Alert Configuration
+![alt text](image-5.png)
+
+![alt text](image-6.png)
