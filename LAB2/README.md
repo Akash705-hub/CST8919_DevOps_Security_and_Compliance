@@ -97,25 +97,4 @@ Invoke-RestMethod -Uri http://127.0.0.1:5000/login -Method Post -ContentType "ap
 
 ## Azure Deployment
 
-- App Service
-![alt text](image.png)
-
-- Log Analytics Workspace
-![alt text](image-1.png)
-
-- Configure Log Analytics Workspace
-![alt text](image-2.png)
-![alt text](image-3.png)
-
-- KQL
-![alt text](image-4.png)
-
-- Alert Configuration
-![alt text](image-5.png)
-
-![alt text](image-6.png)
-
-- Email Notification
-
-![alt text](image.png)
-![alt text](image-1.png)
+- Images are added under Azure Images folder
