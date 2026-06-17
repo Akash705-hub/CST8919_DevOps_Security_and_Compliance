@@ -114,3 +114,8 @@ Invoke-RestMethod -Uri http://127.0.0.1:5000/login -Method Post -ContentType "ap
 ![alt text](image-5.png)
 
 ![alt text](image-6.png)
+
+- Email Notification
+
+![alt text](image.png)
+![alt text](image-1.png)
