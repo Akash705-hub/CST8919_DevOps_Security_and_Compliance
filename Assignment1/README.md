@@ -8,6 +8,9 @@ This assignment extends the Flask application from Lab 1 by integrating Auth0 au
 - access to the `/protected` route
 - unauthorized access attempts
 
+## Recording link
+https://drive.google.com/file/d/1GxoMUCl-uzngwVpZUtaIsQ1X1XG_6ay8/view?usp=drive_link
+
 ## Features
 
 - Auth0 login and logout flow
