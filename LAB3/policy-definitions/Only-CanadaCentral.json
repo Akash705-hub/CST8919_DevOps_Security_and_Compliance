@@ -1,0 +1,51 @@
+{
+  "properties": {
+    "displayName": "Only-CanadaCentral",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "Denies any resource that is not being deployed in the Canada Central region",
+    "metadata": {
+      "category": "Assignment Policie",
+      "createdBy": "8b366300-48ab-44b2-a2e1-3581ec577a75",
+      "createdOn": "2026-08-03T21:10:22.6396107Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "version": "1.0.0",
+    "parameters": {
+      "allowedLocations": {
+        "type": "Array",
+        "metadata": {
+          "description": "The list of allowed locations for resources.",
+          "displayName": "Allowed locations",
+          "strongType": "location"
+        }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "not": {
+          "field": "location",
+          "in": "[parameters('allowedLocations')]"
+        }
+      },
+      "then": {
+        "effect": "deny"
+      }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/subscriptions/05253203-9c39-484a-a88c-38b036d9fd90/providers/Microsoft.Authorization/policyDefinitions/e169d22ca82357a2a343cad4",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "e169d22ca82357a2a343cad4",
+  "systemData": {
+    "createdBy": "pate1706@algonquinlive.com",
+    "createdByType": "User",
+    "createdAt": "2026-08-03T21:10:22.6227179Z",
+    "lastModifiedBy": "pate1706@algonquinlive.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2026-08-03T21:10:22.6227179Z"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "displayName": "Require-ProjectName-Tag",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Requires all resources to include a ProjectName tag",
+    "metadata": {
+      "category": "Assignment Policy",
+      "createdBy": "8b366300-48ab-44b2-a2e1-3581ec577a75",
+      "createdOn": "2026-08-03T21:17:59.4677611Z",
+      "updatedBy": "8b366300-48ab-44b2-a2e1-3581ec577a75",
+      "updatedOn": "2026-08-03T21:29:47.0132845Z"
+    },
+    "version": "1.0.0",
+    "policyRule": {
+      "if": {
+        "field": "tags['ProjectName']",
+        "exists": "false"
+      },
+      "then": {
+        "effect": "deny"
+      }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/subscriptions/05253203-9c39-484a-a88c-38b036d9fd90/providers/Microsoft.Authorization/policyDefinitions/7bafd9370d1a5be8a8c15c57",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "7bafd9370d1a5be8a8c15c57",
+  "systemData": {
+    "createdBy": "pate1706@algonquinlive.com",
+    "createdByType": "User",
+    "createdAt": "2026-08-03T21:17:59.448118Z",
+    "lastModifiedBy": "pate1706@algonquinlive.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2026-08-03T21:29:46.996907Z"
+  }
+}
