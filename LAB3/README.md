@@ -11,7 +11,7 @@ By completing this lab, you will learn how to:
 - Enforce compliance using Deny effects
 
 ## Video
-
+https://drive.google.com/file/d/1m58dJP_dh4coeq_729twJLM-ig5vGzew/view?usp=sharing
 
 ## Lab Objectives
 
